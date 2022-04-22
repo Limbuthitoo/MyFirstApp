@@ -6,6 +6,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(),
       appBar: AppBar(
        title: Text("Catalog App"),
       ),
@@ -14,7 +15,6 @@ class HomePage extends StatelessWidget {
           child: Text("$name is doing $count App tutorials"),
         ),
       ),
-      drawer: Drawer(),
     );
   }
 }
